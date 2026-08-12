@@ -1,1 +1,572 @@
+/* =========================================
+   VOZ DEL CIELO EN TIEMPOS DIFÍCILES
+   HOJA DE ESTILOS PRINCIPAL
+========================================= */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f8f5ef;
+    color: #333;
+}
+
+/* =========================================
+   NAVEGACIÓN
+========================================= */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+
+    background: rgba(18, 27, 44, 0.97);
+
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.25);
+}
+
+nav {
+    max-width: 1200px;
+    min-height: 75px;
+    margin: auto;
+    padding: 0 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #f4c95d;
+    font-size: 21px;
+    font-weight: bold;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.menu {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #f4c95d;
+}
+
+/* =========================================
+   PORTADA
+========================================= */
+
+.hero {
+    min-height: 100vh;
+
+    background:
+        linear-gradient(
+            rgba(8, 15, 30, 0.68),
+            rgba(8, 15, 30, 0.78)
+        ),
+        url("https://images.unsplash.com/photo-1504052434569-70ad5836ab65?auto=format&fit=crop&w=1800&q=85");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 120px 20px 60px;
+}
+
+.hero-contenido {
+    max-width: 900px;
+    color: white;
+}
+
+.cruz {
+    font-size: 65px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: clamp(40px, 6vw, 72px);
+    line-height: 1.05;
+
+    margin-bottom: 25px;
+
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+}
+
+.hero h1 span {
+    color: #f4c95d;
+}
+
+.hero p {
+    max-width: 750px;
+    margin: auto;
+
+    font-size: 21px;
+    line-height: 1.7;
+}
+
+.frase {
+    margin-top: 28px;
+
+    color: #f4c95d;
+
+    font-size: 20px;
+    font-style: italic;
+}
+
+.botones {
+    margin-top: 35px;
+
+    display: flex;
+    justify-content: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 14px 28px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.btn-principal {
+    background: #f4c95d;
+    color: #172033;
+}
+
+.btn-principal:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 10px 25px rgba(244, 201, 93, 0.45);
+}
+
+.btn-secundario {
+    border: 2px solid white;
+    color: white;
+}
+
+.btn-secundario:hover {
+    background: white;
+    color: #172033;
+}
+
+/* =========================================
+   SECCIONES
+========================================= */
+
+.seccion {
+    max-width: 1200px;
+    margin: auto;
+
+    padding: 90px 25px;
+}
+
+.titulo {
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+.titulo h2 {
+    color: #172033;
+
+    font-size: 38px;
+
+    margin-bottom: 12px;
+}
+
+.titulo p {
+    color: #666;
+
+    font-size: 18px;
+}
+
+/* =========================================
+   TARJETAS
+========================================= */
+
+.tarjetas {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+.tarjeta {
+    background: white;
+
+    padding: 35px 25px;
+
+    text-align: center;
+
+    border-radius: 18px;
+
+    border-top:
+        5px solid #f4c95d;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.10);
+
+    transition: 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-10px);
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.icono {
+    font-size: 50px;
+
+    margin-bottom: 20px;
+}
+
+.tarjeta h3 {
+    color: #172033;
+
+    font-size: 25px;
+
+    margin-bottom: 15px;
+}
+
+.tarjeta p {
+    color: #666;
+
+    line-height: 1.6;
+}
+
+.tarjeta a {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    color: #172033;
+
+    font-weight: bold;
+
+    text-decoration: none;
+}
+
+.tarjeta a:hover {
+    color: #c39422;
+}
+
+/* =========================================
+   VERSÍCULO
+========================================= */
+
+.versiculo {
+    max-width: none;
+
+    background:
+        linear-gradient(
+            rgba(23, 32, 51, 0.94),
+            rgba(23, 32, 51, 0.94)
+        ),
+        url("https://images.unsplash.com/photo-1490730141103-6cac27aaab94?auto=format&fit=crop&w=1600&q=80");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+
+    text-align: center;
+}
+
+.versiculo-contenido {
+    max-width: 850px;
+
+    margin: auto;
+}
+
+.versiculo h2 {
+    color: #f4c95d;
+
+    font-size: 35px;
+
+    margin-bottom: 25px;
+}
+
+.versiculo blockquote {
+    font-size: 27px;
+
+    line-height: 1.6;
+
+    font-style: italic;
+}
+
+.versiculo cite {
+    display: block;
+
+    margin-top: 25px;
+
+    color: #f4c95d;
+
+    font-style: normal;
+
+    font-weight: bold;
+}
+
+/* =========================================
+   REFLEXIÓN
+========================================= */
+
+.reflexion {
+    background: white;
+}
+
+.reflexion-contenido {
+    max-width: 850px;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+.reflexion h2 {
+    color: #172033;
+
+    font-size: 35px;
+
+    margin-bottom: 25px;
+}
+
+.reflexion p {
+    color: #555;
+
+    font-size: 19px;
+
+    line-height: 1.8;
+}
+
+/* =========================================
+   DONACIONES
+========================================= */
+
+.donaciones {
+    max-width: none;
+
+    background:
+        linear-gradient(
+            rgba(18, 27, 44, 0.96),
+            rgba(18, 27, 44, 0.96)
+        );
+
+    color: white;
+
+    text-align: center;
+}
+
+.donaciones-contenido {
+    max-width: 800px;
+
+    margin: auto;
+}
+
+.donaciones-icono {
+    font-size: 55px;
+
+    margin-bottom: 15px;
+}
+
+.donaciones h2 {
+    color: #f4c95d;
+
+    font-size: 38px;
+
+    margin-bottom: 25px;
+}
+
+.donaciones p {
+    color: #e5e7eb;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    margin-bottom: 15px;
+}
+
+.btn-donacion {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    background: #f4c95d;
+
+    color: #172033;
+}
+
+.btn-donacion:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 10px 25px rgba(244, 201, 93, 0.45);
+}
+
+.donaciones-nota {
+    margin-top: 25px;
+
+    font-size: 14px !important;
+
+    color: #aeb5c0 !important;
+}
+
+/* =========================================
+   PIE DE PÁGINA
+========================================= */
+
+footer {
+    background: #111827;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 45px 20px;
+}
+
+footer h3 {
+    color: #f4c95d;
+
+    font-size: 25px;
+
+    margin-bottom: 15px;
+}
+
+footer p {
+    color: #ccc;
+
+    margin-bottom: 10px;
+}
+
+.copyright {
+    margin-top: 25px;
+
+    color: #888;
+
+    font-size: 14px;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .tarjetas {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .menu {
+        gap: 15px;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+
+        justify-content: center;
+
+        gap: 10px;
+
+        padding: 15px;
+    }
+
+    .logo {
+        white-space: normal;
+
+        text-align: center;
+
+        font-size: 18px;
+    }
+
+    .menu {
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        gap: 12px;
+
+        font-size: 14px;
+    }
+
+    .hero {
+        padding-top: 170px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .tarjetas {
+        grid-template-columns: 1fr;
+    }
+
+    .versiculo blockquote {
+        font-size: 21px;
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero-contenido {
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+
+}
