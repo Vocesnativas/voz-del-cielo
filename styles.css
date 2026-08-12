@@ -253,50 +253,40 @@ section.versiculo {
     margin: 0;
     padding: 90px 25px;
 
-    background: red !important;
+    background: #172033 !important;
 
-    background-image:
-        linear-gradient(
-            rgba(23, 32, 51, 0.92),
-            rgba(23, 32, 51, 0.92)
-        ),
-        url("https://images.unsplash.com/photo-1490730141103-6cac27aaab94?auto=format&fit=crop&w=1600&q=85");
-
-    background-size: cover;
-    background-position: center;
-
-    color: white;
+    color: white !important;
     text-align: center;
 }
 
-.versiculo-contenido {
+section.versiculo .versiculo-contenido {
     max-width: 850px;
     margin: 0 auto;
 }
 
-.versiculo h2 {
-    color: #f4c95d;
+section.versiculo h2 {
+    color: #f4c95d !important;
     font-size: 35px;
     margin-bottom: 25px;
 }
 
-.versiculo blockquote {
-    color: white;
+section.versiculo blockquote {
+    color: white !important;
     font-size: 27px;
     line-height: 1.6;
     font-style: italic;
     margin: 0 auto 15px;
 }
 
-.versiculo cite {
+section.versiculo cite {
     display: block;
-    color: #f4c95d;
+    color: #f4c95d !important;
     font-style: normal;
     font-weight: bold;
     margin-top: 15px;
 }
 
-.versiculo #nuevo-versiculo {
+section.versiculo #nuevo-versiculo {
     margin-top: 25px;
     border: none;
     cursor: pointer;
