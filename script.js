@@ -42,26 +42,23 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     ];
 
-    const textoVersiculo =
-        document.getElementById("texto-versiculo");
+    // ========================================
+    // ELEMENTOS DEL HTML
+    // ========================================
 
-    const referenciaVersiculo =
-        document.getElementById("referencia-versiculo");
-
-    const botonVersiculo =
-        document.getElementById("nuevo-versiculo");
-
+    const textoVersiculo = document.getElementById("texto-versiculo");
+    const referenciaVersiculo = document.getElementById("referencia-versiculo");
+    const botonVersiculo = document.getElementById("nuevo-versiculo");
 
     // ========================================
     // CAMBIAR VERSÍCULO
     // ========================================
 
-    if (botonVersiculo) {
+    if (botonVersiculo && textoVersiculo && referenciaVersiculo) {
 
         botonVersiculo.addEventListener("click", function () {
 
-            const numero =
-                Math.floor(Math.random() * versiculos.length);
+            const numero = Math.floor(Math.random() * versiculos.length);
 
             textoVersiculo.textContent =
                 "“" + versiculos[numero].texto + "”";
