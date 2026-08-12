@@ -293,7 +293,9 @@ nav {
 ========================================= */
 
 .versiculo {
+    width: 100%;
     max-width: none;
+    margin: 0;
 
     background:
         linear-gradient(
@@ -306,44 +308,41 @@ nav {
     background-position: center;
 
     color: white;
-
     text-align: center;
 }
 
 .versiculo-contenido {
     max-width: 850px;
-
     margin: auto;
 }
 
 .versiculo h2 {
     color: #f4c95d;
-
     font-size: 35px;
-
     margin-bottom: 25px;
 }
 
 .versiculo blockquote {
+    color: white;
     font-size: 27px;
-
     line-height: 1.6;
-
     font-style: italic;
+    margin-bottom: 15px;
 }
 
 .versiculo cite {
     display: block;
-
-    margin-top: 25px;
-
+    margin-top: 15px;
     color: #f4c95d;
-
     font-style: normal;
-
     font-weight: bold;
 }
 
+.versiculo .btn {
+    margin-top: 25px;
+    border: none;
+    cursor: pointer;
+}
 /* =========================================
    REFLEXIÓN
 ========================================= */
