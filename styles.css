@@ -1,6 +1,5 @@
 /* =========================================
    VOZ DEL CIELO EN TIEMPOS DIFÍCILES
-   HOJA DE ESTILOS PRINCIPAL
 ========================================= */
 
 * {
@@ -29,9 +28,7 @@ header {
     left: 0;
     width: 100%;
     z-index: 1000;
-
     background: rgba(18, 27, 44, 0.97);
-
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.25);
 }
 
@@ -40,7 +37,6 @@ nav {
     min-height: 75px;
     margin: auto;
     padding: 0 25px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -64,7 +60,6 @@ nav {
     color: white;
     text-decoration: none;
     font-weight: bold;
-
     transition: 0.3s;
 }
 
@@ -94,7 +89,6 @@ nav {
     justify-content: center;
 
     text-align: center;
-
     padding: 120px 20px 60px;
 }
 
@@ -111,9 +105,7 @@ nav {
 .hero h1 {
     font-size: clamp(40px, 6vw, 72px);
     line-height: 1.05;
-
     margin-bottom: 25px;
-
     text-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
 }
 
@@ -124,41 +116,32 @@ nav {
 .hero p {
     max-width: 750px;
     margin: auto;
-
     font-size: 21px;
     line-height: 1.7;
 }
 
 .frase {
     margin-top: 28px;
-
     color: #f4c95d;
-
     font-size: 20px;
     font-style: italic;
 }
 
 .botones {
     margin-top: 35px;
-
     display: flex;
     justify-content: center;
-
     gap: 15px;
-
     flex-wrap: wrap;
 }
 
 .btn {
     padding: 14px 28px;
-
     border-radius: 30px;
-
     text-decoration: none;
-
     font-weight: bold;
-
     transition: 0.3s;
+    display: inline-block;
 }
 
 .btn-principal {
@@ -168,9 +151,7 @@ nav {
 
 .btn-principal:hover {
     transform: translateY(-4px);
-
-    box-shadow:
-        0 10px 25px rgba(244, 201, 93, 0.45);
+    box-shadow: 0 10px 25px rgba(244, 201, 93, 0.45);
 }
 
 .btn-secundario {
@@ -190,27 +171,22 @@ nav {
 .seccion {
     max-width: 1200px;
     margin: auto;
-
     padding: 90px 25px;
 }
 
 .titulo {
     text-align: center;
-
     margin-bottom: 50px;
 }
 
 .titulo h2 {
     color: #172033;
-
     font-size: 38px;
-
     margin-bottom: 12px;
 }
 
 .titulo p {
     color: #666;
-
     font-size: 18px;
 }
 
@@ -220,67 +196,46 @@ nav {
 
 .tarjetas {
     display: grid;
-
-    grid-template-columns:
-        repeat(4, 1fr);
-
+    grid-template-columns: repeat(4, 1fr);
     gap: 25px;
 }
 
 .tarjeta {
     background: white;
-
     padding: 35px 25px;
-
     text-align: center;
-
     border-radius: 18px;
-
-    border-top:
-        5px solid #f4c95d;
-
-    box-shadow:
-        0 8px 25px rgba(0, 0, 0, 0.10);
-
+    border-top: 5px solid #f4c95d;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.10);
     transition: 0.3s;
 }
 
 .tarjeta:hover {
     transform: translateY(-10px);
-
-    box-shadow:
-        0 15px 35px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
 }
 
 .icono {
     font-size: 50px;
-
     margin-bottom: 20px;
 }
 
 .tarjeta h3 {
     color: #172033;
-
     font-size: 25px;
-
     margin-bottom: 15px;
 }
 
 .tarjeta p {
     color: #666;
-
     line-height: 1.6;
 }
 
 .tarjeta a {
     display: inline-block;
-
     margin-top: 20px;
-
     color: #172033;
-
     font-weight: bold;
-
     text-decoration: none;
 }
 
@@ -289,20 +244,23 @@ nav {
 }
 
 /* =========================================
-   VERSÍCULO
+   VERSÍCULO DEL DÍA
 ========================================= */
 
-.versiculo {
+section.versiculo {
     width: 100%;
     max-width: none;
     margin: 0;
+    padding: 90px 25px;
 
-    background:
+    background-color: #172033;
+
+    background-image:
         linear-gradient(
-            rgba(23, 32, 51, 0.94),
-            rgba(23, 32, 51, 0.94)
+            rgba(23, 32, 51, 0.92),
+            rgba(23, 32, 51, 0.92)
         ),
-        url("https://images.unsplash.com/photo-1490730141103-6cac27aaab94?auto=format&fit=crop&w=1600&q=80");
+        url("https://images.unsplash.com/photo-1490730141103-6cac27aaab94?auto=format&fit=crop&w=1600&q=85");
 
     background-size: cover;
     background-position: center;
@@ -313,7 +271,7 @@ nav {
 
 .versiculo-contenido {
     max-width: 850px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .versiculo h2 {
@@ -327,22 +285,23 @@ nav {
     font-size: 27px;
     line-height: 1.6;
     font-style: italic;
-    margin-bottom: 15px;
+    margin: 0 auto 15px;
 }
 
 .versiculo cite {
     display: block;
-    margin-top: 15px;
     color: #f4c95d;
     font-style: normal;
     font-weight: bold;
+    margin-top: 15px;
 }
 
-.versiculo .btn {
+.versiculo #nuevo-versiculo {
     margin-top: 25px;
     border: none;
     cursor: pointer;
 }
+
 /* =========================================
    REFLEXIÓN
 ========================================= */
@@ -353,25 +312,19 @@ nav {
 
 .reflexion-contenido {
     max-width: 850px;
-
     margin: auto;
-
     text-align: center;
 }
 
 .reflexion h2 {
     color: #172033;
-
     font-size: 35px;
-
     margin-bottom: 25px;
 }
 
 .reflexion p {
     color: #555;
-
     font-size: 19px;
-
     line-height: 1.8;
 }
 
@@ -381,70 +334,48 @@ nav {
 
 .donaciones {
     max-width: none;
-
-    background:
-        linear-gradient(
-            rgba(18, 27, 44, 0.96),
-            rgba(18, 27, 44, 0.96)
-        );
-
+    background: #121b2c;
     color: white;
-
     text-align: center;
 }
 
 .donaciones-contenido {
     max-width: 800px;
-
     margin: auto;
 }
 
 .donaciones-icono {
     font-size: 55px;
-
     margin-bottom: 15px;
 }
 
 .donaciones h2 {
     color: #f4c95d;
-
     font-size: 38px;
-
     margin-bottom: 25px;
 }
 
 .donaciones p {
     color: #e5e7eb;
-
     font-size: 18px;
-
     line-height: 1.8;
-
     margin-bottom: 15px;
 }
 
 .btn-donacion {
-    display: inline-block;
-
     margin-top: 20px;
-
     background: #f4c95d;
-
     color: #172033;
 }
 
 .btn-donacion:hover {
     transform: translateY(-4px);
-
-    box-shadow:
-        0 10px 25px rgba(244, 201, 93, 0.45);
+    box-shadow: 0 10px 25px rgba(244, 201, 93, 0.45);
 }
 
 .donaciones-nota {
     margin-top: 25px;
-
     font-size: 14px !important;
-
     color: #aeb5c0 !important;
 }
 
@@ -454,33 +385,25 @@ nav {
 
 footer {
     background: #111827;
-
     color: white;
-
     text-align: center;
-
     padding: 45px 20px;
 }
 
 footer h3 {
     color: #f4c95d;
-
     font-size: 25px;
-
     margin-bottom: 15px;
 }
 
 footer p {
     color: #ccc;
-
     margin-bottom: 10px;
 }
 
 .copyright {
     margin-top: 25px;
-
     color: #888;
-
     font-size: 14px;
 }
 
@@ -491,43 +414,33 @@ footer p {
 @media (max-width: 1000px) {
 
     .tarjetas {
-        grid-template-columns:
-            repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .menu {
         gap: 15px;
     }
-
 }
 
 @media (max-width: 700px) {
 
     nav {
         flex-direction: column;
-
         justify-content: center;
-
         gap: 10px;
-
         padding: 15px;
     }
 
     .logo {
         white-space: normal;
-
         text-align: center;
-
         font-size: 18px;
     }
 
     .menu {
         justify-content: center;
-
         flex-wrap: wrap;
-
         gap: 12px;
-
         font-size: 14px;
     }
 
@@ -550,7 +463,6 @@ footer p {
     .versiculo blockquote {
         font-size: 21px;
     }
-
 }
 
 @media (max-width: 450px) {
@@ -567,64 +479,4 @@ footer p {
         width: 100%;
         max-width: 300px;
     }
-
-}
-/* ========================================
-   AJUSTE FINAL - VERSÍCULO DEL DÍA
-======================================== */
-
-section.versiculo {
-    width: 100% !important;
-    max-width: none !important;
-    margin: 0 !important;
-    padding: 90px 25px !important;
-
-    background-color: #172033 !important;
-
-    background-image:
-        linear-gradient(
-            rgba(23, 32, 51, 0.92),
-            rgba(23, 32, 51, 0.92)
-        ),
-        url("https://images.unsplash.com/photo-1490730141103-6cac27aaab94?auto=format&fit=crop&w=1600&q=85") !important;
-
-    background-size: cover !important;
-    background-position: center !important;
-
-    color: white !important;
-    text-align: center;
-}
-
-section.versiculo .versiculo-contenido {
-    max-width: 850px;
-    margin: 0 auto;
-}
-
-section.versiculo h2 {
-    color: #f4c95d !important;
-    font-size: 35px;
-    margin-bottom: 25px;
-}
-
-section.versiculo blockquote {
-    color: white !important;
-    font-size: 27px;
-    line-height: 1.6;
-    font-style: italic;
-    margin: 0 auto 15px;
-}
-
-section.versiculo cite {
-    display: block;
-    color: #f4c95d !important;
-    font-style: normal;
-    font-weight: bold;
-    margin-top: 15px;
-}
-
-section.versiculo #nuevo-versiculo {
-    display: inline-block;
-    margin-top: 25px;
-    border: none;
-    cursor: pointer;
 }
