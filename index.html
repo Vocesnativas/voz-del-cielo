@@ -6,7 +6,7 @@
 
     <title>Voz del Cielo en Tiempos Difíciles</title>
 
-    <meta name="description" content="Un espacio de fe, esperanza y reflexión. Palabra, canciones, enseñanzas y estudio bíblico.">
+    <meta name="description" content="Palabra, canciones, enseñanzas y estudio bíblico para fortalecer la fe y llevar esperanza al corazón.">
 
     <style>
 
@@ -26,9 +26,7 @@
             color: #333;
         }
 
-        /* =========================
-           BARRA DE NAVEGACIÓN
-        ========================= */
+        /* ===== NAVEGACIÓN ===== */
 
         header {
             position: fixed;
@@ -36,26 +34,26 @@
             left: 0;
             width: 100%;
             z-index: 1000;
-            background: rgba(20, 28, 45, 0.96);
+            background: rgba(18, 27, 44, 0.96);
             box-shadow: 0 3px 15px rgba(0,0,0,0.25);
         }
 
         nav {
             max-width: 1200px;
-            margin: auto;
             min-height: 75px;
+            margin: auto;
+            padding: 0 25px;
+
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 0 25px;
         }
 
         .logo {
             color: #f4c95d;
-            font-size: 22px;
+            font-size: 21px;
             font-weight: bold;
             text-decoration: none;
-            letter-spacing: 1px;
         }
 
         .menu {
@@ -75,17 +73,15 @@
             color: #f4c95d;
         }
 
-        /* =========================
-           PORTADA
-        ========================= */
+        /* ===== PORTADA ===== */
 
         .hero {
             min-height: 100vh;
 
             background:
                 linear-gradient(
-                    rgba(8, 15, 30, 0.70),
-                    rgba(8, 15, 30, 0.75)
+                    rgba(8, 15, 30, 0.68),
+                    rgba(8, 15, 30, 0.78)
                 ),
                 url("https://images.unsplash.com/photo-1504052434569-70ad5836ab65?auto=format&fit=crop&w=1800&q=85");
 
@@ -105,16 +101,16 @@
             color: white;
         }
 
-        .hero-icono {
+        .cruz {
             font-size: 65px;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
 
         .hero h1 {
-            font-size: clamp(38px, 6vw, 72px);
+            font-size: clamp(40px, 6vw, 72px);
             line-height: 1.05;
             margin-bottom: 25px;
-            text-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            text-shadow: 0 4px 15px rgba(0,0,0,0.6);
         }
 
         .hero h1 span {
@@ -122,21 +118,23 @@
         }
 
         .hero p {
-            font-size: 21px;
-            line-height: 1.7;
             max-width: 750px;
             margin: auto;
+
+            font-size: 21px;
+            line-height: 1.7;
         }
 
-        .hero-frase {
-            margin-top: 30px;
-            font-style: italic;
-            font-size: 20px;
+        .frase {
+            margin-top: 28px;
             color: #f4c95d;
+            font-size: 20px;
+            font-style: italic;
         }
 
         .botones {
             margin-top: 35px;
+
             display: flex;
             justify-content: center;
             gap: 15px;
@@ -144,11 +142,12 @@
         }
 
         .btn {
-            display: inline-block;
             padding: 14px 28px;
             border-radius: 30px;
+
             text-decoration: none;
             font-weight: bold;
+
             transition: 0.3s;
         }
 
@@ -159,7 +158,7 @@
 
         .btn-principal:hover {
             transform: translateY(-4px);
-            box-shadow: 0 10px 25px rgba(244,201,93,0.4);
+            box-shadow: 0 10px 25px rgba(244,201,93,0.45);
         }
 
         .btn-secundario {
@@ -172,9 +171,7 @@
             color: #172033;
         }
 
-        /* =========================
-           SECCIÓN PRINCIPAL
-        ========================= */
+        /* ===== SECCIONES ===== */
 
         .seccion {
             max-width: 1200px;
@@ -182,25 +179,23 @@
             padding: 90px 25px;
         }
 
-        .titulo-seccion {
+        .titulo {
             text-align: center;
             margin-bottom: 50px;
         }
 
-        .titulo-seccion h2 {
-            font-size: 38px;
+        .titulo h2 {
             color: #172033;
+            font-size: 38px;
             margin-bottom: 12px;
         }
 
-        .titulo-seccion p {
+        .titulo p {
             color: #666;
             font-size: 18px;
         }
 
-        /* =========================
-           CUATRO ÁREAS
-        ========================= */
+        /* ===== TARJETAS ===== */
 
         .tarjetas {
             display: grid;
@@ -211,11 +206,15 @@
         .tarjeta {
             background: white;
             padding: 35px 25px;
+
             text-align: center;
+
             border-radius: 18px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.10);
-            transition: 0.3s;
             border-top: 5px solid #f4c95d;
+
+            box-shadow: 0 8px 25px rgba(0,0,0,0.10);
+
+            transition: 0.3s;
         }
 
         .tarjeta:hover {
@@ -223,7 +222,7 @@
             box-shadow: 0 15px 35px rgba(0,0,0,0.15);
         }
 
-        .tarjeta .icono {
+        .icono {
             font-size: 50px;
             margin-bottom: 20px;
         }
@@ -242,6 +241,7 @@
         .tarjeta a {
             display: inline-block;
             margin-top: 20px;
+
             color: #172033;
             font-weight: bold;
             text-decoration: none;
@@ -251,11 +251,11 @@
             color: #c39422;
         }
 
-        /* =========================
-           VERSÍCULO
-        ========================= */
+        /* ===== VERSÍCULO ===== */
 
         .versiculo {
+            max-width: none;
+
             background:
                 linear-gradient(
                     rgba(23,32,51,0.94),
@@ -295,12 +295,10 @@
             font-weight: bold;
         }
 
-        /* =========================
-           REFLEXIÓN
-        ========================= */
+        /* ===== REFLEXIÓN ===== */
 
         .reflexion {
-            background: #fff;
+            background: white;
         }
 
         .reflexion-contenido {
@@ -316,14 +314,12 @@
         }
 
         .reflexion p {
+            color: #555;
             font-size: 19px;
             line-height: 1.8;
-            color: #555;
         }
 
-        /* =========================
-           PIE DE PÁGINA
-        ========================= */
+        /* ===== FOOTER ===== */
 
         footer {
             background: #111827;
@@ -345,13 +341,11 @@
 
         .copyright {
             margin-top: 25px;
-            font-size: 14px;
             color: #888;
+            font-size: 14px;
         }
 
-        /* =========================
-           RESPONSIVE
-        ========================= */
+        /* ===== CELULARES ===== */
 
         @media (max-width: 900px) {
 
@@ -375,8 +369,8 @@
             }
 
             .menu {
-                flex-wrap: wrap;
                 justify-content: center;
+                flex-wrap: wrap;
             }
 
             .hero {
@@ -401,9 +395,7 @@
 
 <body>
 
-    <!-- =========================
-         NAVEGACIÓN
-    ========================= -->
+    <!-- NAVEGACIÓN -->
 
     <header>
 
@@ -425,9 +417,7 @@
     </header>
 
 
-    <!-- =========================
-         PORTADA
-    ========================= -->
+    <!-- PORTADA -->
 
     <main>
 
@@ -435,7 +425,7 @@
 
             <div class="hero-contenido">
 
-                <div class="hero-icono">✝️</div>
+                <div class="cruz">✝️</div>
 
                 <h1>
                     Voz del Cielo<br>
@@ -448,7 +438,7 @@
                     de la Palabra de Dios.
                 </p>
 
-                <div class="hero-frase">
+                <div class="frase">
                     “Cuando el camino se hace difícil,
                     deja que la voz del Cielo hable a tu corazón.”
                 </div>
@@ -470,13 +460,11 @@
         </section>
 
 
-        <!-- =========================
-             CUATRO ÁREAS
-        ========================= -->
+        <!-- CUATRO ÁREAS -->
 
         <section class="seccion" id="palabra">
 
-            <div class="titulo-seccion">
+            <div class="titulo">
 
                 <h2>Un encuentro con Dios</h2>
 
@@ -565,9 +553,7 @@
         </section>
 
 
-        <!-- =========================
-             VERSÍCULO
-        ========================= -->
+        <!-- VERSÍCULO -->
 
         <section class="seccion versiculo">
 
@@ -589,9 +575,7 @@
         </section>
 
 
-        <!-- =========================
-             REFLEXIÓN
-        ========================= -->
+        <!-- REFLEXIÓN -->
 
         <section class="seccion reflexion">
 
@@ -614,9 +598,7 @@
     </main>
 
 
-    <!-- =========================
-         FOOTER
-    ========================= -->
+    <!-- PIE DE PÁGINA -->
 
     <footer>
 
@@ -631,7 +613,7 @@
         </p>
 
         <div class="copyright">
-            © 2026 Voz del Cielo. Todos los derechos reservados.
+            © 2026 Voz del Cielo
         </div>
 
     </footer>
