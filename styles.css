@@ -253,7 +253,7 @@ section.versiculo {
     margin: 0;
     padding: 90px 25px;
 
-    background-color: #172033;
+    background: red !important;
 
     background-image:
         linear-gradient(
