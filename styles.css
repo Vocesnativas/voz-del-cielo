@@ -483,3 +483,69 @@ footer p {
         max-width: 300px;
     }
 }
+/* ========================================
+   PALABRA DE DIOS
+======================================== */
+
+.palabra-dios {
+    background: #f8f5ef;
+    padding: 80px 20px;
+}
+
+.palabra-dios .titulo {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.palabra-dios .titulo h2 {
+    font-size: 38px;
+    color: #172b4d;
+    margin-bottom: 10px;
+}
+
+.palabra-dios .titulo p {
+    font-size: 18px;
+    color: #555;
+}
+
+.palabra-contenido {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 45px;
+    background: white;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.10);
+}
+
+.palabra-icono {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.palabra-contenido h3 {
+    font-size: 28px;
+    color: #172b4d;
+    margin-bottom: 20px;
+}
+
+.palabra-contenido p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 25px;
+}
+
+.palabra-contenido blockquote {
+    font-size: 24px;
+    font-style: italic;
+    color: #7a5c20;
+    margin: 25px auto 10px;
+}
+
+.palabra-contenido cite {
+    display: block;
+    font-size: 17px;
+    font-weight: bold;
+    color: #172b4d;
+}
