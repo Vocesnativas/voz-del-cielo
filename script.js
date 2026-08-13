@@ -40,6 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const numero = Math.floor(Math.random() * versiculos.length);
 
         texto.textContent = "“" + versiculos[numero].texto + "”";
+
         referencia.textContent = versiculos[numero].referencia;
 
     });
