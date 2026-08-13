@@ -287,9 +287,22 @@ section.versiculo cite {
 }
 
 section.versiculo #nuevo-versiculo {
+    display: inline-block;
     margin-top: 25px;
+    padding: 14px 28px;
+    border-radius: 30px;
     border: none;
+    background: #f4c95d;
+    color: #172033;
+    font-weight: bold;
+    font-size: 16px;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+section.versiculo #nuevo-versiculo:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(244, 201, 93, 0.45);
 }
 
 /* =========================================
